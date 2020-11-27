@@ -1,0 +1,135 @@
+\documentclass[a4paper, 12pt, english]{article}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, caption}
+\usepackage{natbib}
+%\bibliographystyle{apa}
+\bibliographystyle{apalike2}
+%\setcitestyle{authoryear,open={((},close={))}}
+\usepackage{multicol,lipsum}
+{\par\nobreak\vfil\penalty0\vfilneg
+	\vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+	\prevdepth=\tpd}
+\usepackage{adjustbox}
+%\usepackage[backend=biber,style=science,citestyle=authoryear]{biblatex}
+%\addbibresource{library.bib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{csquotes}
+\usepackage{svg}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{blindtext}
+
+%\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+
+%\addbibresource{library.bib}
+
+
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+\geometry{left=1in,right=1in,top=1.5in,bottom=1.5in}
+\begin{document}
+		
+\title{Group Assignment DtfF}		
+\author{Beatrice Fontana and Riccardo Barbiero}
+
+\date{\today}
+\maketitle
+Matricula Number:
+    \begin{itemize}
+        \item 19-753-854 - Beatrice Fontana
+        \item 19-753-862 - Riccardo Barbiero 
+    \end{itemize}  
+    
+\begin{abstract}
+\blindtext[1]
+\\
+\\
+\\
+\end{abstract}
+
+\newpage
+\pagenumbering{Roman}
+
+
+% table of contents
+%\setcounter{tocdepth}{2}
+\tableofcontents
+%\vspace{2cm}
+%\newpage
+%\listoffigures
+%\clearpage
+%\listoftables
+
+\clearpage
+
+\pagenumbering{arabic}
+\section{Introduction}
+\blindtext[1]
+
+
+
+\clearpage
+\section{Literature}
+\blindtext[1] (\cite{clift2012economic}, \cite{morgan2012supporting}) and economical decisions.
+For example, consumers are influenced in their decision making by patriotism \citep{spielmann2018product}. 
+They tend to buy domestic products despite the availability of imported otherwise identical products \citep{shankarmahesh2006consumer}.\\
+
+
+\subsection{More about literature}
+
+It may be argued that our dependent variable is not a perfect measure. However, it represents a good proxy for the individual preference level between national and international equities. Still, following \cite{morse2011patriotism}, we use an alternative measure for home bias by incorporating the optimal portfolio suggested by the CAPM using the world market capitalization. The CAPM home bias \% is computed as the difference between the optimal CAPM domestic weight for each country and the holdings of domestic equities:
+\begin{equation}
+     CAPM \: home \: bias\: \% = \frac{home\: investment}{home + foreign\: investment} - \frac{home\: capitalization}{world\: capitalization}
+\end{equation}
+Results using the alternative home bias measure are consistent with the ones provided by HOME-BIAS and are reported in the robustness check section.\\
+
+%Means of Home bias 2 per Country
+\begin{table}[!htpb] 
+    \centering
+    \caption{Mean of CAPM home bias for each country.}
+    \label{Tab:MeanHomeBias}
+    
+     \begin{tabular}{lr} 
+        \toprule
+        Country & Mean\\
+        \midrule
+             Estonia & 0.25 \\
+             Germany & 0.65 \\
+             China & 0.44  \\
+             Hong Kong & 0.41 \\
+             Japan & 0.45 \\
+             Taiwan & 0.45 \\
+             Vietnam & 0.56\\
+        \bottomrule
+    \end{tabular}\\  
+\end{table}
+\newpage
+
+\section{Method}
+\blindtext[1]
+
+\newpage
+\section{Results}
+%to insert tables and figures
+\blindtext[1]
+
+\clearpage
+\section{Conclusion}
+\blindtext
+
+\clearpage
+\newpage
+\bibliography{test}
+%\bibliography{test}
+%\printbibliography
+\newpage
+\appendix
+% \\
+\end{document}
