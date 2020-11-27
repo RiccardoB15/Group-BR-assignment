@@ -1,0 +1,10 @@
+This project has the aim to learn how to use digital tools for collaborating and communicating remotely with collegues on a common project. 
+
+Later updates on the aim of our research.
+
+Structure:
+- set up in github
+- pyton data research and visualization
+- latex paper
+- latex bimer
+- final output
