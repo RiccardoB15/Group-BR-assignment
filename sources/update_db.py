@@ -2,8 +2,6 @@
 
 import requests
 import pandas as pd
-import matplotlib.pyplot as plt
-
 
 url = 'http://dataservices.imf.org/REST/SDMX_JSON.svc/'
 keys = ['CompactData/IFS/M.GB.PMP_IX', 'CompactData/IFS/Q.AU.PMP_IX'] # adjust codes here
